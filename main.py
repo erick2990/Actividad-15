@@ -6,7 +6,7 @@ while fin_menu:
 
    try:
        print("\t\t\tBienvenido usuario: ")
-       print("1. Opcion 1 \n2. Opcion 2 \n3. Opcion 3 \n4.Opcion 4 5. Salir")
+       print("1. Opcion 1 \n2. Opcion 2 \n3. Opcion 3 \n4.Opcion 4 \n5. Salir")
        op = int(input('Seleccione una opción: '))
        match op:
            case 1:
