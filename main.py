@@ -10,11 +10,24 @@ while fin_menu:
        op = int(input('Seleccione una opción: '))
        match op:
            case 1:
+               print('Opcion 1')
            case 2:
+               print('Opcion 2')
            case 3:
+               print('Opcion 3')
            case 4:
+               print('Opcion 4')
            case 5:
-            print('¿Esta seguro que desea salir?')
+               while True:
+                   conf = input('¿Esta seguro que desea salir? S/N')
+                   if conf.upper() == "S":
+                       print('Adios')
+                       op = False
+                       break
+                   elif conf.upper() == "N":
+                       break
+                   else:
+                       print(f'La opcion {conf} no existe vuelve a intentarlo con S para si o N para no')
 
            case _:
             print('Valor incorrecto - ¡Por favor verifique su respuesta!')
